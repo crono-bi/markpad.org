@@ -1,0 +1,13 @@
+
+
+.theme-default-content{
+  max-width: 1200px  !important;
+}
+
+svg {
+  margin-bottom: 40px;
+}
+
+div.dx-datagrid {
+  margin-bottom: 40px;
+}
