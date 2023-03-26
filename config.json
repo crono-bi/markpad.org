@@ -1,0 +1,13 @@
+{
+  "Title": "Crono Pad",
+  "Navigation": [
+    {
+    "Text": "Inicio",
+    "Link": "/"
+  },
+  {
+    "Text": "Markdown",
+    "Link": "markdown"
+  }]
+
+}
