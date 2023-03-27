@@ -7,6 +7,13 @@ Position: 3
 
 **Crono Pad** permite incluir rejillas utilizando la funcionalidad de Grid CSS. Esto permite construir un *layout* para el contenido del documento, pudiendo distribuir las gráficas y tablas convenientemente.
 
+
+::: recuerda
+El código <strong>Crono Markdown</strong> utilizado para generar esta página está disponible en
+el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/blob/master/markdown/layout/README.md)
+:::
+
+
 A continuación se muestra ina disposición en 3 columnas. Se han añadido algunas propiedades CSS para que se identifique mejor cada una de las celdas de la rejilla.
 
 ||| [Container]([Columns]=3) Item (BackgroundColor='#a0a0c5')

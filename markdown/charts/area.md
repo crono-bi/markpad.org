@@ -3,9 +3,18 @@ Position: 3
 Title: "Gráficos de área"
 ---
 
+# Gráficos de área
+
+En esta página se muestra mediante ejemplos los gráficos de área que es posible crear con **Crono Pad**.
 
 
-## Gráficos de área
+::: recuerda
+El código <strong>Crono Markdown</strong> utilizado para generar esta página está disponible en
+el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/blob/master/markdown/charts/area.md)
+:::
+
+
+## Gráficos de área simples
 
 
 Los gráficos de área por defecto muestran el cero, aunque se puede cambiar este comportamiento con la propiedad `BegintAtZero`.

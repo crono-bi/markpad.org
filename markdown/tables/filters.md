@@ -8,6 +8,13 @@ Position: 3
 El elemento `[HEADER FILTER]` añade un icono en la cabecera de cada columna para permitir filtrar los valores de la tabla.
 
 
+
+::: recuerda
+El código <strong>Crono Markdown</strong> utilizado para generar esta página está disponible en
+el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/blob/master/markdown/tables/filters.md)
+:::
+
+
 ``` grid
  GRID
     [HEADER FILTER]

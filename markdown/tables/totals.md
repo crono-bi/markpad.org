@@ -20,3 +20,9 @@ FROM DATABASE [Demo Crono Pad]
 where año=2012 and País='España'
 order by Importe desc
 ```
+
+
+::: recuerda
+El código <strong>Crono Markdown</strong> utilizado para generar esta página está disponible en
+el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/blob/master/markdown/tables/totals.md)
+:::

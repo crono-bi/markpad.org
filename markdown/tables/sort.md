@@ -9,6 +9,12 @@ Title: Ordenación personalizada
 Se puede especificar una ordenación personalizada sobre una columna para, por ejemplo, ordenar correctamente los meses.
 
 
+::: recuerda
+El código <strong>Crono Markdown</strong> utilizado para generar esta página está disponible en
+el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/blob/master/markdown/tables/sort.md)
+:::
+
+
 ``` grid
 GRID
     [grid column](Name='Mes', [value]=Mes, SortValue=[Num Mes], AllowHeaderFiltering=YES)

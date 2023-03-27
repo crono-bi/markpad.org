@@ -6,6 +6,15 @@ Position: 5
 
 # Gráfico de tarta
 
+En esta página se muestra mediante ejemplos los gráficos de tarta que es posible crear con **Crono Pad**.
+
+
+::: recuerda
+El código <strong>Crono Markdown</strong> utilizado para generar esta página está disponible en
+el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/blob/master/markdown/charts/pie.md)
+:::
+
+
 
 El tipo de gráfica `Pie` sirve para construir gráficos de tarta.
 

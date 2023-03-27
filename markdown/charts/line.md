@@ -6,6 +6,12 @@ Position: 2
 
 En esta página se muestra mediante ejemplos los gráficos de líneas que es posible crear con **Crono Pad**.
 
+::: recuerda
+El código <strong>Crono Markdown</strong> utilizado para generar esta página está disponible en
+el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/blob/master/markdown/charts/line.md)
+:::
+
+
 ## Gráficos de línea
 
 Por defecto los gráficos de línea no muestran el zero.

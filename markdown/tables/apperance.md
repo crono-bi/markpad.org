@@ -17,6 +17,11 @@ Se puede modificar el aspecto de la tabla con las siguientes propiedades:
  * MulticolumnSort
 
 
+::: recuerda
+El código <strong>Crono Markdown</strong> utilizado para generar esta página está disponible en
+el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/blob/master/markdown/tables/apperance.md)
+:::
+
 
 ``` grid
 GRID

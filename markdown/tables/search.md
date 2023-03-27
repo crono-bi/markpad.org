@@ -8,6 +8,13 @@ Title: Búsqueda
 
 El elemento `[SEARCH PANEL]`añade un buscador en la parte superior de la tabla que permite buscar un texto en toda la tabla.
 
+
+::: recuerda
+El código <strong>Crono Markdown</strong> utilizado para generar esta página está disponible en
+el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/blob/master/markdown/tables/search.md)
+:::
+
+
 ``` grid
  GRID
     [search panel]

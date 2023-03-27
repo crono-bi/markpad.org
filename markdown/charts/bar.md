@@ -7,6 +7,12 @@ Title: "Gráficos de barra"
 
 En esta página se muestra mediante ejemplos los gráficos de barra que es posible crear con **Crono Pad**.
 
+::: recuerda
+El código <strong>Crono Markdown</strong> utilizado para generar esta página está disponible en
+el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/blob/master/markdown/charts/bar.md)
+:::
+
+
 ## Gráficos de barra simples
 
 Se pueden crear gráficos de barra de un indicador.
