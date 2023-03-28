@@ -86,3 +86,10 @@ el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/bl
 :::
 
 En el resto de apartados se describen las características del Markdown de **Crono Pad** y se muestran ejemplos de todas sus características.
+
+- [Markdown](/markdown/)
+- [Gráficos](/markdown/charts/)
+- [Tablas](/markdown/tables/)
+- [Layout](/markdown/layout/)
+- [Componentes](/markdown/components/)
+
