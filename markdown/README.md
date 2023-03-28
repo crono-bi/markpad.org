@@ -2,13 +2,18 @@
 # Markdown
 
 
-**Markdown** es un lenguaje sencillo que se utiliza para formatear texto de forma sencilla y fácil de leer. Fue creado por John Gruber en 2004 con el objetivo de proporcionar una forma de escribir documentos que sean fáciles de leer y de escribir, y que puedan convertirse fácilmente en HTML.
+**Markdown** es un lenguaje que se utiliza para formatear texto de forma sencilla y fácil de leer. Fue creado por John Gruber en 2004 con el objetivo de proporcionar una forma de escribir documentos que sean fáciles de leer y de escribir, y que puedan convertirse fácilmente en HTML.
 
-En Markdown, el texto se escribe utilizando una serie de símbolos que indican cómo se debe formatear el texto. Por ejemplo, un asterisco (*) alrededor de una palabra o frase indica que debe ser enfatizada (como en **negrita** o *cursiva*).
+En Markdown el texto se escribe utilizando una serie de símbolos que indican cómo se debe formatear el texto. Por ejemplo, un asterisco (*) alrededor de una palabra o frase indica que debe ser enfatizada (ya sea en **negrita** o en *cursiva*).
 
 Markdown también permite crear títulos, listas con viñetas, enlaces, imágenes, bloques de código y mucho más, todo con una sintaxis simple y fácil de recordar.
 
-Esta misma página esta escrita en Markdown. Todo el código está disponible en un repositorio en Github.
+Esta misma página esta escrita en Markdown. Todo el código está disponible en un [repositorio en Github](https://github.com/bifacil/pad.crono.net).
+
+::: recuerda
+El código <strong>Crono Markdown</strong> utilizado para generar esta página está disponible en
+el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/blob/master/markdown/README.md)
+:::
 
 ## Sintaxis básica
 
