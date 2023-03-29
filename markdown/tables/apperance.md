@@ -8,6 +8,9 @@ Title: Aspecto
 
 Se puede modificar el aspecto de la tabla con las siguientes propiedades:
 
+ * ColumnAutoWidth
+ * AllowColumnResizing
+ * AllowColumnReordering
  * AlternateColumns
  * ShowBorders
  * ShowColumnLines

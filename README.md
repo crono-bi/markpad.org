@@ -4,12 +4,12 @@ Sidebar: NO
 
 # Bienvenido
 
-**Crono Pad** es un generador de aplicaciones web de datos, ya sean cuadros de mando, informes estéticos, simples listados o paneles de información.
+**Crono Pad** es un generador de aplicaciones web de datos, ya sean cuadros de mando, informes estáticos, simples listados o paneles de información.
 
 **Crono Pad** permite:
 
 - Construir páginas web estáticas que funcionan sin servidor (solo HTML/CSS/JS).
-- Aplicaciones web que se conectan a una base de datos para mostrar información actualizada (con gráficos y tablas)
+- Construir páginas web dinámicas con un servidor que se conecta a una base de datos para generar las visualizaciones (gráficos y tablas).
 - Servicio API que puede ser llamado desde cualquier desarrollo propio (Vue, React, Angular, ...)
 
 
