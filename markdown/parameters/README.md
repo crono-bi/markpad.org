@@ -28,3 +28,24 @@ SELECT $'- [{NOMBRE}](/markdown/parameters/item/{ID_TIENDA})'
 FROM LB_TIENDAS
 ORDER BY NOMBRE
 ```
+
+También es posible incluir un link en una tabla:
+
+``` grid
+GRID
+  [GRID COLUMN](Name='Tienda', [Value]=Tienda)
+  [GRID COLUMN](Name='Ventas 2011', [Value]=[Ventas 2011])
+  [GRID COLUMN](Name='Ventas 2012', [Value]=[Ventas 2012])
+  [LINK COLUMN](Name='Ver', [Value]= +$'/markdown/parameters/item/{ID_TIENDA}')
+SELECT  
+    LB_TIENDAS.ID_TIENDA,
+    Tienda,
+    Importe  where (año=2011) [Ventas 2011],
+    Importe  where (año=2012) [Ventas 2012]
+FROM DATABASE [Demo Crono Pad] 
+where 
+    país='ESPAÑA' 
+    and año in (2011,2012)
+order by Tienda
+```
+

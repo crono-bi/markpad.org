@@ -1,6 +1,7 @@
 {
   "AuthenticationMode":"Calendas",
-  "Accentcolor":"red",
+  "Theme":"Colorful",
+  "AccentColor":"red",
   "ShowLogo":true,
   "Title": "Crono Pad",
   "Navigation": [
