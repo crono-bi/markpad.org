@@ -16,13 +16,13 @@
   "Variables":{
     "Pais":{
       "Name":"País",
-      "AllowMultiSelect":true,
+      "AllowMultiselect":true,
       "CronoSql":"SELECT LB_TIENDAS.PAIS AS [País] FROM dbo.LB_TIENDAS LB_TIENDAS GROUP BY LB_TIENDAS.PAIS"
     },
     "Anyo":{
       "Name":"Año",
       "DefaultValue":2011,
-      "AllowMultiSelect":false,
+      "AllowMultiselect":false,
       "CronoSql":"SELECT DISTINCT LB_MESES.ANYO AS [Año], $'Año {Año}' text FROM dbo.LB_MESES LB_MESES ORDER BY 1"      
     }
   }
