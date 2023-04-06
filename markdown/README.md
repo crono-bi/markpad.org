@@ -1,4 +1,4 @@
-
+﻿
 # Markdown
 
 
@@ -48,7 +48,7 @@ Es posible incluir enlaces e imágenes en un texto Markdown. Por ejemplo, esta e
 
 Así se incluyen imágenes:
 
-![Imagen](https://www.pixelstalk.net/wp-content/uploads/2016/07/HD-Relaxing-Image.jpg)
+![Imagen](/resources/images/image.jpg)
 
 ## Títulos, código y listas anidadas
 
