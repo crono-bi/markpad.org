@@ -1,33 +1,39 @@
-{
-  "Catalog":"resources/Demo Crono Pad.metadata",
-  "AuthenticationMode":"Calendas",
-  "StaticTheme":"Resources\\Vuepress-theme\\theme.html",
-  "Theme":"VuePress",
-  "DarkMode":true,
-  "AccentColor":"red",
-  "ShowLogo":true,
-  "Title": "Crono Pad",
+﻿{
+  "AuthenticationMode": "Calendas",
+  "Catalog": "resources/Demo Crono Pad.metadata",
   "Navigation": [
     {
-    "Text": "Inicio",
-    "Link": "/"
-  },
-  {
-    "Text": "Documentación",
-    "Link": "markdown"
-  }], 
-  "Variables":{
-    "Pais":{
-      "Name":"País",
-      "AllowMultiselect":true,
-      "CronoSql":"SELECT LB_TIENDAS.PAIS AS [País] FROM dbo.LB_TIENDAS LB_TIENDAS GROUP BY LB_TIENDAS.PAIS"
+      "Text": "Inicio",
+      "Link": "/"
     },
-    "Anyo":{
-      "Name":"Año",
-      "DefaultValue":2011,
-      "AllowMultiselect":false,
-      "CronoSql":"SELECT DISTINCT LB_MESES.ANYO AS [Año], $'Año {Año}' text FROM dbo.LB_MESES LB_MESES ORDER BY 1"      
+    {
+      "Text": "Documentaci\u00F3n",
+      "Link": "markdown"
     }
-  }
-
+  ],
+  "Theme": "VuePress",
+  "DarkMode": true,
+  "AccentColor": "red",
+  "ShowThemeSelector": true,
+  "ShowLogo": true,
+  "Title": "Crono Pad",
+  "Variables": {
+    "Pais": {
+      "Name": "Pa\u00EDs",
+      "CronoSql": "SELECT LB_TIENDAS.PAIS AS [Pa\u00EDs] FROM dbo.LB_TIENDAS LB_TIENDAS GROUP BY LB_TIENDAS.PAIS",
+      "IdColumn": null,
+      "DescriptionColumn": null,
+      "AllowMultiselect": true,
+      "DefaultValue": null
+    },
+    "Anyo": {
+      "Name": "A\u00F1o",
+      "CronoSql": "SELECT DISTINCT LB_MESES.ANYO AS [A\u00F1o], $\u0027A\u00F1o {A\u00F1o}\u0027 text FROM dbo.LB_MESES LB_MESES ORDER BY 1",
+      "IdColumn": null,
+      "DescriptionColumn": null,
+      "AllowMultiselect": false,
+      "DefaultValue": 2011
+    }
+  },
+  "StaticTheme": "Resources\\vuepress-theme\\theme.html"
 }
