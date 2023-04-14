@@ -1,6 +1,7 @@
 {
   "Catalog":"resources/Demo Crono Pad.metadata",
   "AuthenticationMode":"Calendas",
+  "StaticTheme":"Resources\\Vuepress-theme\\theme.html",
   "Theme":"VuePress",
   "DarkMode":true,
   "AccentColor":"red",
