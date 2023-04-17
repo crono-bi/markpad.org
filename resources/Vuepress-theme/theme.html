@@ -9,10 +9,8 @@
       <link href="/resources/vuepress-theme/style.css" rel="stylesheet"/>
       <script>DevExpress.localization.locale(navigator.language);</script>
   </head>
-  <body>
-    <div class="wrapper">
-        <header class="navbar">
-            <div class="container-fluid">
+  <body class="wrapper">
+        <header class="navbar container-fluid">
                 <div class="header-left d-flex align-items-center">
                     <div class="sidebar-button me-2">
                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon">
@@ -27,12 +25,10 @@
                 <div class="header-right">
                     <slot-navigation/>
                 </div>
-            </div>
         </header>
-        <main>
-            <div class="page-content">
+        <main class="page-content">
                 <aside class="scrollable">
-                    <nav class="nav-links">
+                    <nav>
                         <slot-navigation/>
                     </nav>
                     <slot-sidebar/>
@@ -44,10 +40,8 @@
                             <slot-article/>
                         </article>
                     </div>
-                </div>
             </div>
         </main>
-    </div>
-    <script src="/resources/js/main.js"></script>
+        <script src="/resources/js/main.js"></script>
   </body>
 </html>
