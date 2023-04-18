@@ -1,5 +1,6 @@
 ---
 Sidebar: NO
+SectionName: Inicio
 ---
 
 # Bienvenido

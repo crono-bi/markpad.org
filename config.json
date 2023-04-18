@@ -1,16 +1,6 @@
 ﻿{
   "AuthenticationMode": "Calendas",
   "Catalog": "resources/Demo Crono Pad.metadata",
-  "Navigation": [
-    {
-      "Text": "Inicio",
-      "Link": "/"
-    },
-    {
-      "Text": "Documentaci\u00F3n",
-      "Link": "markdown"
-    }
-  ],
   "Theme": "VuePress",
   "DarkMode": true,
   "AccentColor": "red",
@@ -35,5 +25,5 @@
       "DefaultValue": 2011
     }
   },
-  "StaticTheme": "Resources\\vuepress-theme\\theme.html"
+  "StaticTheme": "Resources\\Themes\\Default.html"
 }
