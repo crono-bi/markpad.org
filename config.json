@@ -1,5 +1,6 @@
 ﻿{
-  "AuthenticationMode": "Calendas",
+  "AuthenticationMode": "None",
+  "Users": ["*"],
   "Catalog": "resources/Demo Crono Pad.metadata",
   "Theme": "VuePress",
   "DarkMode": true,
