@@ -1,8 +1,8 @@
 ﻿---
-SectionName: Documentación
+Section: Documentación
 ---
 
-# Markdown
+# Documentación
 
 
 **Markdown** es un lenguaje que se utiliza para formatear texto de forma sencilla y fácil de leer. Fue creado por John Gruber en 2004 con el objetivo de proporcionar una forma de escribir documentos que sean fáciles de leer y de escribir, y que puedan convertirse fácilmente en HTML.
