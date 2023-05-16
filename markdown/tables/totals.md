@@ -7,7 +7,7 @@ Se puede añadir una fila de totales estableciendo la propiedad `SummaryType`:
 
 ``` grid
 GRID
-    [APPEARANCE](alternateColumns=YES, FocusRow=YES ,MulticolumnSort=YES)
+    [APPEARANCE](AlternateRowBackground=YES, FocusRow=YES ,MulticolumnSort=YES)
     [search panel]
     [grid column](Name='País', [value]=País,Alignment='Center')
     [grid column](Name='TIENDA', [value]=Tienda, SummaryType='count', DisplayFormat='Tiendas: {0}')

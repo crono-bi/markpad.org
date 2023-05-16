@@ -1,10 +1,15 @@
 ﻿{
   "AuthenticationMode": "None",
-  "Users": ["*"],
-  "Catalog": "resources/Demo Crono Pad.metadata",
+  "FirebaseConfig": null,
+  "Catalog": "resources\\Demo Crono Pad.metadata",
+  "Users": [
+    "*"
+  ],
+  "ImageResourcesDirectory": null,
   "Theme": "VuePress",
   "DarkMode": true,
-  "AccentColor": "red",
+  "AccentColor": "Red",
+  "MaxWidth": 920,
   "ShowThemeSelector": true,
   "ShowLogo": true,
   "Title": "Crono Pad",
@@ -26,5 +31,5 @@
       "DefaultValue": 2011
     }
   },
-  "StaticTheme": "Resources\\Themes\\Default.html"
+  "StaticTheme": null
 }

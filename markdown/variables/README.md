@@ -26,7 +26,7 @@ Si una página tiene variables definidas aparece un menú en la parte superior p
 
 ``` grid
 GRID
-    [APPEARANCE](alternateColumns=YES, ShowColumnLines=YES, ShowRowLines=YES,FocusRow=YES)
+    [APPEARANCE](AlternateRowBackground=YES, ShowColumnLines=YES, ShowRowLines=YES,FocusRow=YES)
     [grid column](Name='País', [value]=País)
     [grid column](Name='TIENDA', [value]=Tienda)
     [grid column](Name='Ventas', [value]=Importe)

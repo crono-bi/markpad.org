@@ -11,7 +11,7 @@ Se puede modificar el aspecto de la tabla con las siguientes propiedades:
  * ColumnAutoWidth
  * AllowColumnResizing
  * AllowColumnReordering
- * AlternateColumns
+ * AlternateRowBackground
  * ShowBorders
  * ShowColumnLines
  * ShowRowLines
@@ -28,7 +28,7 @@ el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/bl
 
 ``` grid
 GRID
-    [APPEARANCE](alternateColumns=YES, ShowColumnLines=YES, ShowRowLines=YES,FocusRow=YES ,MulticolumnSort=YES, AllowSorting=YES)
+    [APPEARANCE](AlternateRowBackground=YES, ShowColumnLines=YES, ShowRowLines=YES,FocusRow=YES ,MulticolumnSort=YES, AllowSorting=YES)
     [search panel]
     [grid column](Name='País', [value]=País)
     [grid column](Name='TIENDA', [value]=Tienda)
@@ -49,7 +49,7 @@ También se puede personalizar la alineación y el formato de las columnas con e
 
 ``` grid
 GRID
-    [APPEARANCE](alternateColumns=YES, ShowColumnLines=YES, ShowRowLines=YES,FocusRow=YES ,MulticolumnSort=YES, AllowSorting=NO)
+    [APPEARANCE](AlternateRowBackground=YES, ShowColumnLines=YES, ShowRowLines=YES,FocusRow=YES ,MulticolumnSort=YES, AllowSorting=NO)
     [search panel]
     [grid column](Name='País', [value]=País,Alignment='Center')
     [grid column](Name='TIENDA', [value]=Tienda,Alignment='right')
