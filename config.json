@@ -10,7 +10,6 @@
   "DarkMode": true,
   "AccentColor": "Red",
   "MaxWidth": 920,
-  "ShowThemeSelector": true,
   "ShowLogo": true,
   "Title": "Crono Pad",
   "Variables": {
@@ -31,5 +30,7 @@
       "DefaultValue": 2011
     }
   },
-  "StaticTheme": null
+  "StaticTheme": null,
+  "PublishToCloud": true,
+  "BranchName": null
 }

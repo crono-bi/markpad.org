@@ -23,16 +23,11 @@ Variables: ["Pais", "Anyo"]
 Si una página tiene variables definidas aparece un menú en la parte superior para permitir seleccionar los valores. La página se actualizará reflejando los valores seleccionados.
 
 
-
-``` grid
-GRID
-    [APPEARANCE](AlternateRowBackground=YES, ShowColumnLines=YES, ShowRowLines=YES,FocusRow=YES)
-    [grid column](Name='País', [value]=País)
-    [grid column](Name='TIENDA', [value]=Tienda)
-    [grid column](Name='Ventas', [value]=Importe)
-    [grid column](Name='%', [value]=pct, format='P1')
-SELECT País,Tienda,Importe,pct(importe) [pct]
-FROM DATABASE [Demo Crono Pad] 
-where País=@Pais and año=@anyo
-order by Importe desc
+``` data
+[search panel](SearchPanelVisible=NO, FilterRowVisible=YES)
+[data column](Name='País', [value]=País)
+[data column](Name='TIENDA', [value]=Tienda)
+[data column](Name='Ventas', [value]=Importe) 
+[data filter]([Value]=+(País=@Pais and year(fecha)=@anyo))
 ```
+

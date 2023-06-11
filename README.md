@@ -42,42 +42,28 @@ Sin embargo, **Crono Pad** es también un *API servidor de informes*, por lo que
 El siguiente gráfico se ha definido utilizando **Crono Pad**.
 
 
-``` chart
-CHART 
-  HEADER(Title='Gráfico de barras apiladas')
-  legend(Visible=NO)
-  [y axis](Name='Importe')
-  SERIE(Type='StackedBar',[Value]=[Ventas 2011])
-  SERIE(Type='StackedBar',[Value]=[Ventas 2012])
-SELECT  
-    Tienda,
-    Importe  where (año=2011) [Ventas 2011],
-    Importe  where (año=2012) [Ventas 2012]
-FROM DATABASE [Demo Crono Pad] 
-where país='ESPAÑA' order by Tienda
+``` data
+[chartt](ChartType='Bar')
+HEADER(Title='Gráfico de barras con 2 indicadores')
+LEGEND(Position='topright')
+[data column](Name='Tienda', [value]=Tienda)
+[data column](Name='Ventas', [value]=Importe) 
+[data column](Name='Objetivo', [value]=Objetivo) 
 ```
 
 La siguiente tabla permite ordenar los registros haciendo clic en la cabecera, realizar búsquedas, o filtrar la información. También se ha definido utilizando **Crono Pad**.
 
 
-``` grid
-GRID
-  [SEARCH PANEL]  
-  [HEADER FILTER]  
-  [grid column](Name='País', [value]=País)
-  [grid column](Name='TIENDA', [value]=Tienda)
-  [grid column](Name='Importe', [value]=Importe, SummaryType='sum')
-  [grid column](Name='Unidades', [value]=Unidades, SummaryType='sum')
-  [grid column](Name='PVP', [value]=PVP)
-select 
-  país,
-  tienda, 
-  unidades,
-  importe, 
-  importe/unidades pvp
-from database [Demo Crono Pad]
-order by país,tienda
+``` data
+[APPEARANCE](AlternateRowBackground=YES, ShowColumnLines=YES, ShowRowLines=YES,FocusRow=YES ,MulticolumnSort=YES, AllowSorting=NO)
+[search panel](Text='Search...', width=600, SearchPanelVisible=YES)
+[data column](Name='País', [value]=País,Alignment='Center', SummaryType='count',DisplayFormat='Países: {0}')
+[data column](Name='Cantidad', [value]=Unidades,SummaryType='sum')
+[data column](Name='Cantidad min', [value]=Unidades,SummaryType='min')
+[data column](Name='Cantidad máx', [value]=Unidades,SummaryType='max')
+[data column](Name='Cantidad avg', [value]=Unidades,SummaryType='avg', Format='P1')
 ```
+
 
 Esta página de **Crono Pad** se ha escrito íntegramente utilizando **Crono Pad**. Todo el código fuente está disponible en el [repositorio de Github del proyecto](https://github.com/bifacil/pad.crono.net).
 
