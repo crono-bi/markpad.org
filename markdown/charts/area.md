@@ -1,4 +1,4 @@
----
+﻿---
 Position: 3
 Title: "Gráficos de área"
 ---
@@ -19,36 +19,34 @@ el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/bl
 
 Los gráficos de área por defecto muestran el cero, aunque se puede cambiar este comportamiento con la propiedad `BegintAtZero`.
 
-``` chart
-CHART 
-  HEADER(Title='Gráfico de áreas')
-  [x axis](Visible=YES, gridVisible=NO, Name='Años')
-  [Y axis](Visible=YES, gridVisible=NO, name='Importe €', BegintAtZero=YES)
-  SERIE(Type='Area',[Value]=Importe)
-  LEGEND(Position='bottom')
-SELECT Año,Unidades,Importe
-FROM DATABASE [Demo Crono Pad] 
-where año>=2010 and País='España'
-order by Año
+
+``` data
+CHARTT (ChartType='Area')
+[CHART APPEARANCE] (Palette='Office')
+HEADER (Title='Gráfico de áreas simples')
+[CHART APPEARANCE] (AnimateChart=YES)
+LEGEND (Visible=YES)
+[X AXIS] (Name='Importe €', Visible=YES, GridVisible=YES)
+[Y AXIS] (Name='Años', Visible=YES, GridVisible=YES)
+[DATA COLUMN] (Name='Año', [Value]=EXPRESSION ([Año|DoPLIxSw]))
+[DATA COLUMN] (Name='Importe', [Value]=EXPRESSION ([Importe|vxbOrRSR]))
 ```
+
 
 El tipo de gráfico `SplineArea` muestra las áreas empleando líneas curvas.
 
 
-``` chart
-CHART 
-    HEADER(Title='Área curva')
-    legend(Visible=YES)
-    argument([Value]=Mes)
-    SERIE(Type='SplineArea',[Value]=[Ventas 2011])
-SELECT  
-    [Num Mes],
-    Mes,
-    Importe  where (año=2011) [Ventas 2011]
-FROM DATABASE [Demo Crono Pad] 
-where 
-    país<>'ESPAÑA' 
-order by [Num Mes]
+
+``` data
+CHARTT (ChartType='SplineArea')
+[CHART APPEARANCE] (Palette='Office')
+HEADER (Title='Gráfico de áreas simples')
+[CHART APPEARANCE] (AnimateChart=YES)
+LEGEND (Visible=YES)
+[X AXIS] (Name='Importe €', Visible=YES, GridVisible=YES)
+[Y AXIS] (Name='Años', Visible=YES, GridVisible=YES)
+[DATA COLUMN] (Name='Año', [Value]=EXPRESSION ([Año|DoPLIxSw]))
+[DATA COLUMN] (Name='Importe', [Value]=EXPRESSION ([Importe|vxbOrRSR]))
 ```
 
 
@@ -56,87 +54,60 @@ order by [Num Mes]
 
 El tipo de gráfico `StackedArea` permite hacer gráficos de área apiladas.
 
-``` chart
-CHART
-    HEADER(Title='Ventas apiladas')
-    legend(Visible=YES)
-    [y axis](Name='Importe')
-    SERIE(Type='StackedArea',[Value]=[Ventas 2011])
-    SERIE(Type='StackedArea',[Value]=[Ventas 2012])
-SELECT  
-    Tienda,
-    Importe  where (año=2011) [Ventas 2011],
-    Importe  where (año=2012) [Ventas 2012],
-    calculate [Ventas 2011]+[Ventas 2012] total
-FROM DATABASE [Demo Crono Pad] 
-where 
-    país<>'ESPAÑA' 
-    and año in (2011,2012)
-order by total desc
+
+
+``` data
+CHARTT (ChartType='StackedArea')
+HEADER (Title='Ventas apiladas')
+[CHART APPEARANCE] (AnimateChart=YES)
+LEGEND (Visible=YES)
+[X AXIS] (Name='Países', Visible=YES, GridVisible=YES)
+[DATA COLUMN] (Name='País', [Value]=EXPRESSION ([País|tlkjfKSm]))
+[DATA COLUMN] (Name='Importe 2011', [Value]=EXPRESSION ([Importe|vxbOrRSR] WHERE ([Año|DoPLIxSw]=2011)))
+[DATA COLUMN] (Name='Importe 2012', [Value]=EXPRESSION ([Importe|vxbOrRSR] WHERE ([Año|DoPLIxSw]=2012)))
 ```
 
 
 El tipo de gráfico `StackedSplineArea` permite hacer gráficos de área curvas completamente apiladas.
 
-``` chart
-CHART 
-    HEADER(Title='Ventas apiladas curvas')
-    legend(Visible=YES)
-    [y axis](Name='Importe')
-    SERIE(Type='StackedSplineArea',[Value]=[Ventas 2011])
-    SERIE(Type='StackedSplineArea',[Value]=[Ventas 2012])
-SELECT  
-    Tienda,
-    Importe  where (año=2011) [Ventas 2011],
-    Importe  where (año=2012) [Ventas 2012],
-    calculate [Ventas 2011]+[Ventas 2012] total
-FROM DATABASE [Demo Crono Pad] 
-where 
-    país<>'ESPAÑA' 
-    and año in (2011,2012)
-order by total desc
+
+``` data
+CHARTT (ChartType='StackedSplineArea')
+[CHART APPEARANCE] (Palette='Office')
+HEADER (Title='Ventas apiladas curvas')
+LEGEND (Visible=YES)
+[X AXIS] (Name='Países', Visible=YES, GridVisible=YES)
+[DATA COLUMN] (Name='País', [Value]=EXPRESSION ([País|tlkjfKSm]))
+[DATA COLUMN] (Name='Importe 2011', [Value]=EXPRESSION ([Importe|vxbOrRSR] WHERE ([Año|DoPLIxSw]=2011)))
+[DATA COLUMN] (Name='Importe 2012', [Value]=EXPRESSION ([Importe|vxbOrRSR] WHERE ([Año|DoPLIxSw]=2012)))
 ```
+
+
 
 ## Gráficos de áreas completamente apiladas
 
 El tipo de gráfico `FullStackedArea` permite hacer gráficos de área completamente apiladas.
 
-``` chart
-CHART 
-    HEADER(Title='Ventas apiladas')
-    legend(Visible=YES, position='topright')
-    [y axis](Name='Importe')
-    SERIE(Type='FullStackedArea',[Value]=[Ventas 2011])
-    SERIE(Type='FullStackedArea',[Value]=[Ventas 2012])
-SELECT  
-    Tienda,
-    Importe  where (año=2011) [Ventas 2011],
-    Importe  where (año=2012) [Ventas 2012],
-    calculate [Ventas 2011]+[Ventas 2012] total
-FROM DATABASE [Demo Crono Pad] 
-where 
-    país<>'ESPAÑA' 
-    and año in (2011,2012)
-order by total desc
+
+``` data
+CHARTT (ChartType='FullStackedArea')
+HEADER (Title='Ventas apiladas')
+LEGEND (Visible=YES)
+[X AXIS] (Name='Países', Visible=YES, GridVisible=YES)
+[DATA COLUMN] (Name='País', [Value]=EXPRESSION ([País|tlkjfKSm]))
+[DATA COLUMN] (Name='Importe 2011', [Value]=EXPRESSION ([Importe|vxbOrRSR] WHERE ([Año|DoPLIxSw]=2011)))
+[DATA COLUMN] (Name='Importe 2012', [Value]=EXPRESSION ([Importe|vxbOrRSR] WHERE ([Año|DoPLIxSw]=2012)))
 ```
+
+
 El tipo de gráfico `FullStackedSplineArea` permite hacer gráficos de área curvas completamente apiladas.
 
-
-``` chart
-CHART 
-    HEADER(Title='Ventas apiladas curvas')
-    legend(Visible=YES, position='top')
-    [y axis](Name='Importe')
-    SERIE(Type='FullStackedSplineArea',[Value]=[Ventas 2011])
-    SERIE(Type='FullStackedSplineArea',[Value]=[Ventas 2012])
-SELECT  
-    Tienda,
-    Importe  where (año=2011) [Ventas 2011],
-    Importe  where (año=2012) [Ventas 2012],
-    calculate [Ventas 2011]+[Ventas 2012] total
-FROM DATABASE [Demo Crono Pad] 
-where 
-    país<>'ESPAÑA' 
-    and año in (2011,2012)
-order by total desc
+``` data
+CHARTT (ChartType='FullStackedSplineArea')
+HEADER (Title='Ventas apiladas curvas')
+LEGEND (Visible=YES)
+[X AXIS] (Name='Países', Visible=YES, GridVisible=YES)
+[DATA COLUMN] (Name='País', [Value]=EXPRESSION ([País|tlkjfKSm]))
+[DATA COLUMN] (Name='Importe 2011', [Value]=EXPRESSION ([Importe|vxbOrRSR] WHERE ([Año|DoPLIxSw]=2011)))
+[DATA COLUMN] (Name='Importe 2012', [Value]=EXPRESSION ([Importe|vxbOrRSR] WHERE ([Año|DoPLIxSw]=2012)))
 ```

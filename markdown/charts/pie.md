@@ -1,4 +1,4 @@
----
+﻿---
 Position: 5
 ---
 
@@ -19,62 +19,58 @@ el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/bl
 El tipo de gráfica `Pie` sirve para construir gráficos de tarta.
 
 
-``` chart
-CHART 
-  HEADER(Title='Gráfico de tarta')
-  ARGUMENT([Value]=Tienda)
-  SERIE(Type='Pie',[Value]=+round(100*[pct],1))
-  LEGEND(Position='bottom')
-SELECT top 5 Tienda,Importe,pct(importe) [pct]
-FROM DATABASE [Demo Crono Pad] 
-where año=2012 and País='España'
-order by Importe desc
+
+``` data
+CHARTT (ChartType='Pie')
+HEADER (Title='Gráfico de tarta')
+[CHART APPEARANCE] (AnimateChart=YES)
+LEGEND (Visible=YES)
+[DATA COLUMN] (Name='País', [Value]=EXPRESSION ([País|tlkjfKSm]))
+[DATA COLUMN] (Name='Importe', [Value]=EXPRESSION ([Importe|vxbOrRSR]))
+[DATA FILTER] ([Value]=EXPRESSION ([Año|DoPLIxSw]=2012))
 ```
+
 
 Se pueden incluir varias series en un gráfico de tartas.
 
-``` chart
-CHART 
-  HEADER(Title='Gráfico de tarta')
-  ARGUMENT([Value]=Tienda)
-  SERIE(Type='Pie',[Value]=+round(100*[pct],1))
-  SERIE(Type='Pie',[Value]=+round(120*[pct],1))
-  LEGEND(Position='bottom')
-SELECT top 5 Tienda,Importe,pct(importe) [pct]
-FROM DATABASE [Demo Crono Pad] 
-where año=2012 and País='España'
-order by Importe desc
+
+``` data
+CHARTT (ChartType='Pie')
+HEADER (Title='Gráfico de tarta con 2 series')
+[CHART APPEARANCE] (AnimateChart=YES)
+LEGEND (Visible=YES)
+[DATA COLUMN] (Name='País', [Value]=EXPRESSION ([País|tlkjfKSm]))
+[DATA COLUMN] (Name='Importe 2011', [Value]=EXPRESSION ([Importe|vxbOrRSR] WHERE ([Año|DoPLIxSw]=2011)))
+[DATA COLUMN] (Name='Importe 2012', [Value]=EXPRESSION ([Importe|vxbOrRSR] WHERE ([Año|DoPLIxSw]=2012)))
 ```
+
 
 ## Gráfico de donut
 
 
 El tipo de gráfico `Donut` proporciona este aspecto al gráfico.
 
-``` chart
-CHART 
-  HEADER(Title='Gráfico de donut')
-  ARGUMENT([Value]=Tienda)
-  SERIE(Type='Donut',[Value]=+round(100*[pct],1))
-  LEGEND(Position='bottom')
-SELECT top 5 Tienda,Importe,pct(importe) [pct]
-FROM DATABASE [Demo Crono Pad] 
-where año=2012 and País='España'
-order by Importe desc
+
+``` data
+CHARTT (ChartType='Donut')
+HEADER (Title='Gráfico de donut')
+[CHART APPEARANCE] (AnimateChart=YES)
+LEGEND (Visible=YES)
+[DATA COLUMN] (Name='País', [Value]=EXPRESSION ([País|tlkjfKSm]))
+[DATA COLUMN] (Name='Importe', [Value]=EXPRESSION ([Importe|vxbOrRSR]))
+[DATA FILTER] ([Value]=EXPRESSION ([Año|DoPLIxSw]=2012))
 ```
 
 Se pueden incluir varias series en un gráfico donut.
 
 
-``` chart
-CHART 
-  HEADER(Title='Donut con 2 series')
-  ARGUMENT([Value]=Tienda)
-  SERIE(Type='Donut',[Value]=+round(100*[pct],1))
-  SERIE(Type='Donut',[Value]=+round(120*[pct],1))
-  LEGEND(Position='bottom')
-SELECT top 5 Tienda,Importe,pct(importe) [pct]
-FROM DATABASE [Demo Crono Pad] 
-where año=2012 and País='España'
-order by Importe desc
+
+``` data
+CHARTT (ChartType='Donut')
+HEADER (Title='Gráfico de donut con 2 series')
+[CHART APPEARANCE] (AnimateChart=YES)
+LEGEND (Visible=YES)
+[DATA COLUMN] (Name='País', [Value]=EXPRESSION ([País|tlkjfKSm]))
+[DATA COLUMN] (Name='Importe 2011', [Value]=EXPRESSION ([Importe|vxbOrRSR] WHERE ([Año|DoPLIxSw]=2011)))
+[DATA COLUMN] (Name='Importe 2012', [Value]=EXPRESSION ([Importe|vxbOrRSR] WHERE ([Año|DoPLIxSw]=2012)))
 ```

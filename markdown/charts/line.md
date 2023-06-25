@@ -1,4 +1,4 @@
----
+﻿---
 Position: 2
 ---
 
@@ -16,54 +16,51 @@ el [repositorio Github del proyecto](https://github.com/bifacil/pad.crono.net/bl
 
 Por defecto los gráficos de línea no muestran el zero.
 
-``` chart
-CHART 
-  HEADER(Title='Gráfico de lineas')
-  [x axis](Visible=YES, gridVisible=NO, Name='Años')
-  [Y axis](Visible=YES, gridVisible=NO, name='Importe €')
-  SERIE(Type='Line',[Value]=Importe)
-  SERIE(Type='Line',[Value]=Objetivo)
-  LEGEND(Position='bottomleft')
-SELECT Año,Unidades,Importe,Objetivo
-FROM DATABASE [Demo Crono Pad] 
-where año>=2010 and País='España'
-order by Año
+
+``` data
+CHARTT (ChartType='Line')
+HEADER (Title='Gráfico de líneas')
+[CHART APPEARANCE] (AnimateChart=YES)
+LEGEND (Visible=YES)
+[X AXIS] (Name='Importe €', Visible=YES, GridVisible=YES)
+[Y AXIS] (Name='Años', Visible=YES, GridVisible=YES)
+[DATA COLUMN] (Name='Año', [Value]=EXPRESSION ([Año|DoPLIxSw]))
+[DATA COLUMN] (Name='Importe', [Value]=EXPRESSION ([Importe|vxbOrRSR]))
+[DATA COLUMN] (Name='Objetivo', [Value]=EXPRESSION ([Objetivo|RUsyRowA]))
 ```
+
+
 
 Pero se puede cambiar este comportamiento estableciendo la propiedad `BegintAtZero`
 
 
-``` chart
-CHART 
-  HEADER(Title='Gráfico de lineas')
-  [x axis](Visible=YES, gridVisible=NO, Name='Años')
-  [Y axis](Visible=YES, gridVisible=NO, name='Importe €', BegintAtZero=YES)
-  SERIE(Type='Line',[Value]=Importe)
-  SERIE(Type='Line',[Value]=Objetivo)
-  LEGEND(Position='bottomleft')
-SELECT Año,Unidades,Importe,Objetivo
-FROM DATABASE [Demo Crono Pad] 
-where año>=2010 and País='España'
-order by Año
+``` data
+CHARTT (ChartType='Line')
+HEADER (Title='Gráfico de líneas')
+[CHART APPEARANCE] (AnimateChart=YES)
+LEGEND (Visible=YES)
+[X AXIS] (Name='Importe €', Visible=YES, GridVisible=YES)
+[Y AXIS] (Name='Años', Visible=YES, GridVisible=YES, BeginAtZero=YES)
+[DATA COLUMN] (Name='Año', [Value]=EXPRESSION ([Año|DoPLIxSw]))
+[DATA COLUMN] (Name='Importe', [Value]=EXPRESSION ([Importe|vxbOrRSR]))
+[DATA COLUMN] (Name='Objetivo', [Value]=EXPRESSION ([Objetivo|RUsyRowA]))
 ```
+
+
 
 ## Gráficos de líneas curvas
 
 Se pueden hacer el gráfico con líneas curvas urilizaddo el tipo de gráfico `Spline`.
 
-``` chart
-CHART 
-    HEADER(Title='Vienen curvas')
-    legend(Visible=YES)
-    argument([Value]=Mes)
-    SERIE(Type='Spline',[Value]=[Ventas 2011])
-SELECT  
-    [Num Mes],
-    Mes,
-    Importe  where (año=2011) [Ventas 2011]
-FROM DATABASE [Demo Crono Pad] 
-where 
-    país='ESPAÑA' 
-order by [Num Mes]
+``` data
+CHARTT (ChartType='Spline')
+HEADER (Title='Gráfico de líneas curvas')
+[CHART APPEARANCE] (AnimateChart=YES)
+LEGEND (Visible=YES)
+[X AXIS] (Name='Importe €', Visible=YES, GridVisible=YES)
+[Y AXIS] (Name='Años', Visible=YES, GridVisible=YES)
+[DATA COLUMN] (Name='Año', [Value]=EXPRESSION ([Año|DoPLIxSw]))
+[DATA COLUMN] (Name='Importe', [Value]=EXPRESSION ([Importe|vxbOrRSR]))
+[DATA COLUMN] (Name='Objetivo', [Value]=EXPRESSION ([Objetivo|RUsyRowA]))
 ```
 

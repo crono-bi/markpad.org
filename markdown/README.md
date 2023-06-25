@@ -5,6 +5,26 @@ Section: Documentación
 # Documentación
 
 
+
+## Generador de aplicaciones
+
+Hay otras aplicaciones y generadores web que utilizan Markdown para convertir código Markdown en una página web. Algunas de las más populares son **Jekyll**, **Vuepress**, **Hugo**, **Gatsby** o **MkDocs**, cada uno con sus propias características y funcionalidades. Son aplicaciones muy útiles que se utilizan típicamente para escribir *blogs*, documentación técnica, o en general contenido fundamentalmente textual.
+
+La diferencia de **Crono Pad** frente a esos otros productos es su especialización en aplicaciones de datos. **Crono Pad** permite incluir gráficos complejos y tablas con funcionalidades avanzadas dentro del mismo documento Markdown. 
+
+El objetivo es facilitar la construcción de este tipo de aplicaciones rápidamente y poder llevar la información desde la base de datos hasta la web con facilidad, incluyendo tablas y gráficos complejos, y sin necesidad de programación.
+
+## Servidor Crono Pad
+
+Las aplicaciones de **Crono Pad** no son necesariamente aplicaciones estáticas con código HTML pre-generado. Existe un servidor de **Crono Pad** que atiende las peticiones y genera HTML al momento, consultando la base de datos cuando sea necesario.
+
+**Crono Pad** ofrece un front-end predeterminado que evita la necesidad de construir uno propio con *JavaScript/Typescript* ni usar ningún framework como *Vue*, *Angular* o *React*. Tampoco es necesario construir un *Backend* con *.Net*, *Java*, o *NodeJs*... **Crono Pad** elimina la necesidad de todas estas capas, agilizando el desarrollo, reduciendo los tiempos de puesta en producción, facilitando el mantenimiento y, en definitiva, eliminando la complejidad asociada a cualquier desarrollo web.
+
+Sin embargo, **Crono Pad** es también un *API servidor de informes*, por lo que es posible llamar a *Crono Pad* y mostrar los gráficos y tablas dentro de cualquier desarrollo a medida con *Vue*, *Angular*, *React* o cualquier otro framework...
+
+
+
+
 **Markdown** es un lenguaje que se utiliza para formatear texto de forma sencilla y fácil de leer. Fue creado por John Gruber en 2004 con el objetivo de proporcionar una forma de escribir documentos que sean fáciles de leer y de escribir, y que puedan convertirse fácilmente en HTML.
 
 En Markdown el texto se escribe utilizando una serie de símbolos que indican cómo se debe formatear el texto. Por ejemplo, un asterisco (*) alrededor de una palabra o frase indica que debe ser enfatizada (ya sea en **negrita** o en *cursiva*).
@@ -104,23 +124,13 @@ Crono Pad usa una implementación de Markdown propia que se diferencia de todas 
 En los siguientes apartados se describen los gáficos y tablas soportados en este momento.
 
 
-``` chart
-CHART 
-    HEADER(Title='El objetivo no está apilado')
-    legend(Visible=YES)
-    [y axis](Name='Importe')
-    SERIE(Type='StackedBar',[Value]=[Ventas 2011])
-    SERIE(Type='StackedBar',[Value]=[Ventas 2012])
-    SERIE(Type='Bar',[Value]=Objetivo)
-SELECT  
-    Tienda,
-    Importe  where (año=2011) [Ventas 2011],
-    Importe  where (año=2012) [Ventas 2012],
-    Objetivo
-FROM DATABASE [Demo Crono Pad] 
-where 
-    país='ESPAÑA' 
-    and año in (2011,2012)
-order by Tienda
-```
 
+``` data
+CHARTT (ChartType='Bar')
+HEADER (Title='Ventas España', Subtitle='Gráfico de barras')
+LEGEND (Visible=YES)
+[DATA COLUMN] (Name='Tienda', [Value]=EXPRESSION ([Tienda|yhxAmCEr]))
+[DATA COLUMN] (Name='Importe 2011', [Value]=EXPRESSION ([Importe|vxbOrRSR] WHERE ([Año|DoPLIxSw]=2011)))
+[DATA COLUMN] (Name='Importe 2012', [Value]=EXPRESSION ([Importe|vxbOrRSR] WHERE ([Año|DoPLIxSw]=2012)))
+[DATA FILTER] ([Value]=EXPRESSION ([País|tlkjfKSm]='ESPAÑA'))
+```

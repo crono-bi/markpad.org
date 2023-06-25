@@ -7,11 +7,11 @@
   ],
   "ImageResourcesDirectory": null,
   "Theme": "VuePress",
-  "DarkMode": true,
+  "DarkMode": false,
   "AccentColor": "Red",
   "MaxWidth": 920,
   "ShowLogo": true,
-  "Title": "Crono Pad",
+  "Title": "Markpad",
   "Variables": {
     "Pais": {
       "Name": "Pa\u00EDs",
@@ -31,6 +31,9 @@
     }
   },
   "StaticTheme": null,
-  "PublishToCloud": true,
-  "BranchName": null
+  "CloudTarget": "Markpad",
+  "MarkpadOptions": {
+    "SiteName": "pad"
+  },
+  "CustomAmazonAmplifyOptions": null
 }
