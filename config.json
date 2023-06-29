@@ -5,7 +5,7 @@
   "Users": [
     "*"
   ],
-  "ImageResourcesDirectory": null,
+  "ImageResourcesDirectory": "resources\\images\\",
   "Theme": "VuePress",
   "DarkMode": false,
   "AccentColor": "Red",

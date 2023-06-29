@@ -12,22 +12,27 @@ Markpad permite centrarte en el contenido de las distintas páginas y secciones 
 
 [DOWNLOAD](https://audit.crono.net/downloads/Markpad)
 
-## Características básicas
+## Características
 
 - Fácil de usar
 - Sitios web estáticos
 - Organización del contenido en secciones y páginas
 - Publica la web en un solo clic (en Amazon o en el hosting gratuito de Markpad)
-- Soporta la funcionalidad básica de Markdown y todas las extensiones de [Markdig](https://github.com/xoofx/markdig?search=1)
-- Modo oscuro opcional
-- Varias plantillas disponibles
-
-## Características avanzadas
-
-- Estilo personalizable con CSS
-- Layout personalizable con HMTL
+- Modo oscuro y varias plantillas disponibles
+- Posibilidad de crear sus propias plantillas solo con CSS/HTML
 - Sitios web dinámicos (requiere instalación servidor)
-- Incluye tablas y gráficos con la tecnología de Crono (ver [documentación](/markdown))
+- Incluye tablas y gráficos con la tecnología de Crono
+
+
+
+![markpad1.png](/resources/images/markpad1.png)
+
+
+![publish.png](/resources/images/publish.png)
+
+
+![chart.png](/resources/images/chart.png)
+
 
 
 
