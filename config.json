@@ -30,7 +30,7 @@
       "DefaultValue": 2011
     }
   },
-  "StaticTheme": null,
+  "StaticTheme": "Resources\\theme-vuepress.html",
   "CloudTarget": "Markpad",
   "MarkpadOptions": {
     "SiteName": "pad"
