@@ -3,6 +3,7 @@ Sidebar: NO
 Section: Inicio
 PageCLass: HomeBody
 ArticleClass: HomeArticle
+Title: Inicio
 ---
 
 
@@ -10,10 +11,10 @@ ArticleClass: HomeArticle
     <div class="container">
         <div class="row">
             <div class="col-lg-6 banner-headings align-self-start">
-                <h1 class="common-title"><strong>Create and publish websites with Markpad</strong></h1>
-                <p class="commonTxt">Crono Markpad is an application to create and publish websites using only Markdown and without any technical knowledge or HTML/JS/CSS programming.</p>
-                <p class="commonTxt">Markpad allows you to focus on the content of the different pages and sections of your website.</p>
-                <a href="#" class="btn btn-primary">Download</a>
+                <h1 class="common-title"><strong>Crea y publica sitios web con Markpad</strong></h1>
+                <p class="commonTxt"><strong>Crono Markpad</strong> es una aplicación para crear y publicar sitios web utilizando únicamente Markdown (sin necesidad de conocimiento técnicos de HTML, JSS o CSS).</p>
+                <p class="commonTxt">Markpad te permite centrarte sin distracciones en el contenido de tu sitio.</p>
+                <a href="#" class="btn btn-primary">Descarga </a>
             </div>
             <div class="col-lg-6 banner-img">
                 <img src="/resources/images/banner-img.svg" alt="image" />
@@ -23,17 +24,17 @@ ArticleClass: HomeArticle
 </section>
 <section class="features-section" id="features">
     <div class="container">
-        <h2 class="common-title text-center">Our
-            <Strong>Features</Strong>
+        <h2 class="common-title text-center">
+            <Strong>Características</Strong>
         </h2>
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <img src="/resources/images/feature-img1.svg" alt="img" />
             </div>
             <div class="col-lg-6 serviceTxt">
-                <h2>Easy to use</h2>
-                <p class="commonTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book.</p>
+                <h2>Fácil de usar</h2>
+                <p class="commonTxt">La facilidad de uso es la característica principal de <strong>Markpad</strong>. Escribe el contenido de las páginas de la web y <strong>Markpad</strong> generará y publicará un sitio completamente funcional.</p>
+                <p class="commonTxt">Markpad genera automáticamente la navegación entre las páginas con menus en la cabecera y en el lateral, para que la navegación sea fácil, intuitiva y agradable.</p>
             </div>
         </div>
         <div class="row align-items-center flex-lg-row-reverse">
@@ -41,49 +42,27 @@ ArticleClass: HomeArticle
                 <img src="/resources/images/feature-img2.svg" alt="img" />
             </div>
             <div class="col-lg-6 serviceTxt">
-                <h2>Static websites</h2>
-                <p class="commonTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book.</p>
+                <h2>Sitios web estáticos</h2>
+                <p class="commonTxt">Un <strong>sitio web estático</strong> es un sitio de Internet que muestra el mismo contenido para todos los usuarios, en vez de proporcionar contenido personalizado para cada visitante. Puede contener texto, imágenes, vídeos... Estos sitios no necesitan un servidor ni una base de datos, por lo que son muy seguros, rápidos y facilitan el posicionamiento SEO al tener un mayor rendimiento.</p>
             </div>
         </div>
         <div class="row align-items-center">
-            <div class="col-lg-6">
-                <img src="/resources/images/feature-img3.svg" alt="img" />
-            </div>
-            <div class="col-lg-6 serviceTxt">
-                <h2>Organization of content in sections and pages</h2>
-                <p class="commonTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book.</p>
-            </div>
-        </div>
-        <div class="row align-items-center flex-lg-row-reverse">
             <div class="col-lg-6">
                 <img src="/resources/images/feature-img4.svg" alt="img" />
             </div>
             <div class="col-lg-6 serviceTxt">
-                <h2>Publish the web in a single click (on Amazon or on free Markpad hosting)</h2>
-                <p class="commonTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book.</p>
-            </div>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <img src="/resources/images/feature-img5.svg" alt="img"/>
-            </div>
-            <div class="col-lg-6 serviceTxt">
-                <h2>Dark mode and various templates available</h2>
-                <p class="commonTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book.</p>
+                <h2>Publica en Internet con un clic</h2>
+                <p class="commonTxt"><strong>Markpad</strong> ofrece hosting gratuito para que puedas publicar el sitio en un solo clic.</p>
+                <p>Pero si lo prefieres puedes publicarlo en tu propia infraestructura Amazon o utilizar cualquier otro hospedaje.</p>
             </div>
         </div>
         <div class="row align-items-center flex-lg-row-reverse">
             <div class="col-lg-6">
-                <img src="/resources/images/feature-img6.svg" alt="img"/>
+                <img src="/resources/images/feature-img5.svg" alt="img"/>
             </div>
             <div class="col-lg-6 serviceTxt">
-                <h2>Possibility to create your own templates only with CSS/HTML</h2>
-                <p class="commonTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book.</p>
+                <h2>Plantillas configurables</h2>
+                <p class="commonTxt"><strong>Markpad</strong> incluye algunas plantillas para que puedas publicar un sitio rápidamente y sin conocimiento técnicos. Pero si lo deseas puedes personalizar la plantilla HTML/CSS para que tenga el aspecto que exactamente estás buscando.</p>
             </div>
         </div>
         <div class="row align-items-center">
@@ -91,9 +70,8 @@ ArticleClass: HomeArticle
                 <img src="/resources/images/feature-img7.svg" alt="img"/>
             </div>
             <div class="col-lg-6 serviceTxt">
-                <h2>Dynamic websites (requires server installation)</h2>
-                <p class="commonTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book.</p>
+                <h2>Sitios web dinámicos</h2>
+                <p class="commonTxt">Además de crear sitios estáticos, <strong>Markpad</strong> permite crear también sitios dinámicos. Esto resulta útil cuando la información reside en un base de datos que se actualiza frecuentemente. Este tipo de sitios requiere de un servidor <strong>Crono</strong>.</p>
             </div>
         </div>
         <div class="row align-items-center flex-lg-row-reverse">
@@ -101,16 +79,15 @@ ArticleClass: HomeArticle
                 <img src="/resources/images/feature-img8.svg" alt="img"/>
             </div>
             <div class="col-lg-6 serviceTxt">
-                <h2>Includes tables and graphs powered by Crono</h2>
-                <p class="commonTxt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book.</p>
+                <h2>Tablas y gráficos con la tecnología de Crono</h2>
+                <p class="commonTxt"><strong>Markpad</strong> es un producto de <strong>Crono</strong> y permite conectarse a los catálogos Crono para generar tablas y gráficos. Con <strong>Markpad</strong> se pueden generar informes empresariales de manera fácil y económica.</p>
             </div>
         </div>
     </div>
 </section>
 <section class="screenshot-section">
     <div class="container">
-        <h2 class="common-title text-center"><strong>Screenshots</strong></h2>
+        <h2 class="common-title text-center"><strong>Pantallazos</strong></h2>
     </div>
     <div class="ScreenshotsImg">
         <div class="container-lg">
@@ -138,9 +115,9 @@ ArticleClass: HomeArticle
     <div class="container">
         <div class="NeedHelpBx">
             <div class="NeedHelpTxt">
-                <h2 class="common-title">Need <strong>Help?</strong></h2>
-                <p>Open an issue on Github and we will help you or write to into @crono.net</p>
-                <a href="mailto:@crono.net" class="btn btn-white">Support</a>
+                <h2 class="common-title">Necesitas <strong>ayuda?</strong></h2>
+                <p>Abre una incidencia en Github y te ayudaremos o escríbenos a info@crono.net</p>
+                <a href="#" class="btn btn-white">Soporte</a>
             </div>
             <div>
                 <img src="/resources/images/need-help-girl.png" alt=""/>
