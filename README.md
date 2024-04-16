@@ -14,7 +14,7 @@ Title: Inicio
                 <h1 class="common-title"><strong>Crea y publica sitios web con Markpad</strong></h1>
                 <p class="commonTxt"><strong>Crono Markpad</strong> es una aplicación para crear y publicar sitios web utilizando únicamente Markdown (sin necesidad de conocimiento técnicos de HTML, JSS o CSS).</p>
                 <p class="commonTxt">Markpad te permite centrarte sin distracciones en el contenido de tu sitio.</p>
-                <a href="#" class="btn btn-primary">Descarga </a>
+                <a href="https://audit.crono.net/downloads/Markpad" class="btn btn-primary">Descarga </a>
             </div>
             <div class="col-lg-6 banner-img">
                 <img src="/resources/images/banner-img.svg" alt="image" />
@@ -117,7 +117,7 @@ Title: Inicio
             <div class="NeedHelpTxt">
                 <h2 class="common-title">Necesitas <strong>ayuda?</strong></h2>
                 <p>Abre una incidencia en Github y te ayudaremos o escríbenos a info@crono.net</p>
-                <a href="#" class="btn btn-white">Soporte</a>
+                <a href="https://github.com/crono-bi/markpad.org/issues" class="btn btn-white">Soporte</a>
             </div>
             <div>
                 <img src="/resources/images/need-help-girl.png" alt=""/>
